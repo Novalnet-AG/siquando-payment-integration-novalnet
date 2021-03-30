@@ -1,0 +1,19 @@
+<cc:payment caption="Novalnet eps"
+			screen="Novalnet eps"
+			parameter="novalneteps"
+			version="shop2dateversion70"
+			info="">
+<cc:parameter 	caption="Testmodus aktivieren (0/1)"
+				abstract="Die Zahlung wird im Testmodus durchgeführt, daher wird der Betrag für diese Transaktion nicht eingezogen."
+				default="0">
+				
+<cc:parameter 	caption="Benachrichtigung des Käufers"
+				abstract="Der eingegebene Text wird auf der Checkout-Seite angezeigt">
+
+<cc:text 	name="info"
+			default="Nach der erfolgreichen Überprüfung werden Sie auf die abgesicherte Novalnet-Bestellseite umgeleitet, um die Zahlung fortzusetzen. Bitte schließen Sie den Browser nach der erfolgreichen Zahlung nicht, bis Sie zum Shop zurückgeleitet wurden."
+			info="Dieser Erläuterungstext wird in der Auswahl der Zahlungsweisen angezeigt.">
+
+<cc:text	name="postgateway"
+			default="Warten Sie bitte, Nach der erfolgreichen Überprüfung werden Sie auf die abgesicherte Novalnet-Bestellseite umgeleitet, um die Zahlung fortzusetzen."
+			info="Dieser Text wird nach der Eingabe der persönlichen Daten dargestellt.">

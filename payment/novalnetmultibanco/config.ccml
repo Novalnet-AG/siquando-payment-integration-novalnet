@@ -1,0 +1,20 @@
+<cc:payment caption="Novalnet Multibanco"
+			screen="Novalnet Multibanco"
+			parameter="novalnetmultibanco"
+			version="shop2dateversion70"
+			info="">
+
+<cc:parameter 	caption="Testmodus aktivieren (0/1)"
+				abstract="Die Zahlung wird im Testmodus durchgeführt, daher wird der Betrag für diese Transaktion nicht eingezogen."
+				default="0">
+				
+<cc:parameter 	caption="Benachrichtigung des Käufers"
+				abstract="Der eingegebene Text wird auf der Checkout-Seite angezeigt">
+
+<cc:text 	name="info"
+			default="Nach Abschluss Ihrer Bestellung wird Ihnen im Shop / auf der Webseite eine Zahlungsreferenz angezeigt. Mit dieser Zahlungsreferenz können Sie entweder am Multibanco-Automaten oder per Onlinebanking bezahlen."
+			info="Dieser Erläuterungstext wird in der Auswahl der Zahlungsweisen angezeigt.">
+
+<cc:text	name="postgateway"
+			default="Vielen Dank. Ihre Bestellung wurde entgegengenommen. Sie erhalten in Kürze eine Bestätigungsmail."
+			info="Dieser Text wird nach der Eingabe der persönlichen Daten dargestellt.">

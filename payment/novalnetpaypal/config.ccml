@@ -1,0 +1,27 @@
+<cc:payment caption="Novalnet PayPal"
+			screen="Novalnet PayPal"
+			parameter="novalnetpaypal"
+			version="shop2dateversion70"
+			info="">
+
+<cc:parameter 	caption="Testmodus aktivieren (0/1)"
+				abstract="Die Zahlung wird im Testmodus durchgeführt, daher wird der Betrag für diese Transaktion nicht eingezogen."
+				default="0">
+				
+<cc:parameter 	caption="Benachrichtigung des Käufers"
+				abstract="Der eingegebene Text wird auf der Checkout-Seite angezeigt">
+				
+<cc:parameter 	caption="Bearbeitungsmaßnahme (0/1)"
+				abstract="0 - Zahlung einziehen 1 - Zahlung autorisieren"
+				default="0">
+
+<cc:parameter 	caption="Limit für onhold-Buchungen setzen (in Cent)"
+				abstract="Falls der Bestellbetrag das angegebene Limit übersteigt, wird die Transaktion ausgesetzt, bis Sie diese selbst bestätigen. (Für PayPal: Um diese Option zu verwenden, müssen Sie die Option Billing Agreement (Zahlungsvereinbarung) in Ihrem PayPal-Konto aktiviert haben. Kontaktieren Sie dazu bitte Ihren Kundenbetreuer bei PayPal.)">
+				
+<cc:text 	name="info"
+			default="Nach der erfolgreichen Überprüfung werden Sie auf die abgesicherte Novalnet-Bestellseite umgeleitet, um die Zahlung fortzusetzen. Bitte schließen Sie den Browser nach der erfolgreichen Zahlung nicht, bis Sie zum Shop zurückgeleitet wurden."
+			info="Dieser Erläuterungstext wird in der Auswahl der Zahlungsweisen angezeigt.">
+
+<cc:text	name="postgateway"
+			default="Warten Sie bitte, Nach der erfolgreichen Überprüfung werden Sie auf die abgesicherte Novalnet-Bestellseite umgeleitet, um die Zahlung fortzusetzen."
+			info="Dieser Text wird nach der Eingabe der persönlichen Daten dargestellt.">

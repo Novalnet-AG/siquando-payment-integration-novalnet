@@ -1,0 +1,48 @@
+ <cc:payment caption="Novalnet Kauf auf Rechnung"
+			screen="Novalnet Kauf auf Rechnung"
+			parameter="novalnetinvoice"
+			version="shop2dateversion70"
+			info="">
+
+<cc:parameter 	caption="Testmodus aktivieren (0/1)"
+				abstract="Die Zahlung wird im Testmodus durchgeführt, daher wird der Betrag für diese Transaktion nicht eingezogen."
+				default="0">
+				
+<cc:parameter 	caption="Benachrichtigung des Käufers"
+				abstract="Der eingegebene Text wird auf der Checkout-Seite angezeigt">
+
+<cc:parameter 	caption="Bearbeitungsmaßnahme (0/1)"
+				abstract="0 - Zahlung einziehen 1 - Zahlung autorisieren"
+				default="0">
+
+<cc:parameter 	caption="Limit für onhold-Buchungen setzen (in Cent)"
+				abstract="Falls der Bestellbetrag das angegebene Limit übersteigt, wird die Transaktion ausgesetzt, bis Sie diese selbst bestätigen.">				
+				
+<cc:parameter 	caption="Fälligkeitsdatum (in Tagen)"
+				abstract="Geben Sie die Anzahl der Tage ein, binnen derer die Zahlung bei Novalnet eingehen soll (muss größer als 7 Tage sein). Falls dieses Feld leer ist, werden 14 Tage als Standard-Zahlungsfrist gesetzt">				
+				
+<cc:parameter 	caption="Zahlungsgarantie aktivieren (0/1)"
+				abstract="Grundanforderungen für die Zahlungsgarantie
+
+				Zugelassene Staaten: AT, DE, CH
+				Zugelassene Währung: EUR
+				Mindestbetrag der Bestellung >= 9,99 EUR
+				Mindestalter des Endkunden >= 18 Jahre
+				Rechnungsadresse und Lieferadresse müssen übereinstimmen
+				Geschenkgutscheine / Coupons sind nicht erlaubt"
+				default="0">
+
+<cc:parameter 	caption="Mindestbestellbetrag (in der kleinsten Währungseinheit, z.B. 100 Cent = entsprechen 1.00 EUR)"
+				abstract="Diese Einstellung überschreibt die Standardeinstellung für den Mindest-Bestellbetrag. Anmerkung: der Mindest-Bestellbetrag sollte größer oder gleich 9,99 EUR sein.">
+
+<cc:parameter 	caption="Zahlung ohne Zahlungsgarantie erzwingen (0/1)"
+				abstract="Falls die Zahlungsgarantie aktiviert ist (wahr), die oben genannten Anforderungen jedoch nicht erfüllt werden, soll die Zahlung ohne Zahlungsgarantie verarbeitet werden."
+				default="1">				
+
+<cc:text 	name="info"
+			default="Nachdem Sie die Bestellung abgeschickt haben, erhalten Sie eine Email mit den Bankdaten, um die Zahlung durchzuführen"
+			info="Dieser Erläuterungstext wird in der Auswahl der Zahlungsweisen angezeigt.">
+
+<cc:text	name="postgateway"
+			default="Vielen Dank. Ihre Bestellung wurde entgegengenommen. Sie erhalten in Kürze eine Bestätigungsmail."
+			info="Dieser Text wird nach der Eingabe der persönlichen Daten dargestellt.">
