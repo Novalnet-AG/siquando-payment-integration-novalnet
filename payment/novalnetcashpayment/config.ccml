@@ -1,0 +1,22 @@
+<cc:payment caption="Novalnet Barzahlen"
+			screen="Novalnet Barzahlen"
+			parameter="novalnetcashpayment"
+			version="shop2dateversion70"
+			info="">
+
+<cc:parameter 	caption="Testmodus aktivieren (0/1)"
+				abstract="Die Zahlung wird im Testmodus durchgeführt, daher wird der Betrag für diese Transaktion nicht eingezogen."
+				default="0">
+				
+<cc:parameter 	caption="Benachrichtigung des Käufers"
+				abstract="Der eingegebene Text wird auf der Checkout-Seite angezeigt">
+
+<cc:parameter 	caption="Verfallsdatum des Zahlscheins (in Tagen)"
+				abstract="Geben Sie die Anzahl der Tage ein, um den Betrag in einer Barzahlen-Partnerfiliale in Ihrer Nähe zu bezahlen. Wenn das Feld leer ist, werden standardmäßig 14 Tage als Fälligkeitsdatum gesetzt.">
+
+<cc:text 	name="info"
+			default="Mit Abschluss der Bestellung bekommen Sie einen Zahlschein angezeigt, den Sie sich ausdrucken oder auf Ihr Handy schicken lassen können. Bezahlen Sie den Online-Einkauf mit Hilfe des Zahlscheins an der Kasse einer Barzahlen-Partnerfiliale.">
+
+<cc:text	name="postgateway"
+			default="Vielen Dank. Ihre Bestellung wurde entgegengenommen. Sie erhalten in Kürze eine Bestätigungsmail."
+			info="Dieser Text wird nach der Eingabe der persönlichen Daten dargestellt.">

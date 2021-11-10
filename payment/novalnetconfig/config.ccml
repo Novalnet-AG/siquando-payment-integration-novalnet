@@ -1,0 +1,37 @@
+<cc:payment caption="Novalnet Haupteinstellungen"
+			screen="Novalnet Haupteinstellungen"
+			parameter="novalnetconfig"
+			version="shop2dateversion70"
+			info="">
+
+<cc:parameter 	caption="Händler-ID"
+				abstract="Geben Sie Ihre Novalnet-Händler-ID ein">
+
+<cc:parameter 	caption="Authentifizierungscode"
+				abstract="Geben Sie Ihren Novalnet-Authentifizierungscode ein">
+
+<cc:parameter 	caption="Projekt-ID"
+				abstract="Geben Sie Ihre Novalnet-Projekt-ID ein">
+
+<cc:parameter 	caption="Tarif-ID"
+				abstract="Geben Sie Ihre Novalnet-Tarif-ID ein">
+				
+<cc:parameter 	caption="Zahlungs-Zugriffsschlüssel"
+				abstract="Geben Sie den Novalnet-Zahlungs-Zugriffsschlüssel ein.">
+				
+<cc:parameter 	caption="Logo der Zahlungsart anzeigen (0/1)"
+				abstract="Das Logo der Zahlungsart wird auf der Checkout-Seite angezeigt"
+				default="0">
+
+<cc:parameter 	caption="Deaktivieren Sie die IP-Adresskontrolle (nur zu Testzwecken) (0/1)"
+				abstract="Diese Option ermöglicht eine manuelle Ausführung. Bitte deaktivieren Sie diese Option, bevor Sie Ihren Shop in den LIVE-Modus schalten, um nicht autorisierte Zugriffe von externen Parteien (außer von Novalnet) zu vermeiden."
+				default="0">
+				
+<cc:parameter 	caption="Email-Benachrichtigung für Callback aktivieren (0/1)"
+				abstract=""
+				default="0">
+				
+<cc:parameter 	caption="Emailadresse (An)"
+				abstract="Emailadresse des Empfängers">
+			
+

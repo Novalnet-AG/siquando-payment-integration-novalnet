@@ -1,0 +1,46 @@
+<cc:payment caption="Novalnet Kreditkarte"
+			screen="Novalnet Kreditkarte"
+			parameter="novalnetcc"
+			version="shop2dateversion70"
+			info="">
+				
+<cc:parameter 	caption="Testmodus aktivieren (0/1)"
+				abstract="Die Zahlung wird im Testmodus durchgeführt, daher wird der Betrag für diese Transaktion nicht eingezogen."
+				default="0">
+				
+<cc:parameter 	caption="Benachrichtigung des Käufers"
+				abstract="Der eingegebene Text wird auf der Checkout-Seite angezeigt">
+
+<cc:parameter 	caption="Bearbeitungsmaßnahme (0/1)"
+				abstract="0 - Zahlung einziehen 1 - Zahlung autorisieren"
+				default="0">
+				
+<cc:parameter 	caption="Limit für onhold-Buchungen setzen (in Cent)"
+				abstract="Falls der Bestellbetrag das angegebene Limit übersteigt, wird die Transaktion ausgesetzt, bis Sie diese selbst bestätigen.">
+
+<cc:parameter 	caption="3D-Secure aktivieren (0/1)"
+				abstract="3D-Secure wird für Kreditkarten aktiviert. Die kartenausgebende Bank fragt vom Käufer ein Passwort ab, welches helfen soll, betrügerische Zahlungen zu verhindern. Dies kann von der kartenausgebenden Bank als Beweis verwendet werden, dass der Käufer tatsächlich der Inhaber der Kreditkarte ist. Damit soll das Risiko von Chargebacks verringert werden."
+				default="0">
+				
+<cc:parameter 	caption="3D-Secure-Zahlungen unter vorgegebenen Bedingungen durchführen (0/1)"
+				abstract="If 3D secure is not enabled in the above field, then force 3D secure process as per the 'Enforced 3D secure (as per predefined filters & settings)' module configuration at the Novalnet admin portal. If the predefined filters & settings from Enforced 3D secure module are met, then the transaction will be processed as 3D secure transaction otherwise it will be processed as non 3D secure. Please note that the 'Enforced 3D secure (as per predefined filters & settings)' module should be configured at Novalnet admin portal prior to the activation here. For further information, please refer the description of this fraud module at 'Fraud Modules' tab, below 'Projects' menu, under the selected project in Novalnet admin portal or contact Novalnet support team."
+				default="0">	
+
+<cc:parameter 	caption="CSS-Einstellungen für den Beschriftung"
+				abstract="Beschriftung">
+				
+<cc:parameter 	caption="CSS-Einstellungen für den Eingabe"
+				abstract="Eingabe"
+				default="border: 1px solid #dddddd;background: #DFE3DE;padding: 8px 12px;display: block;border-radius: 0;box-sizing: border-box;float: left;">
+				
+<cc:parameter 	caption="CSS-Einstellungen für den Text"
+				abstract="Text für das CSS"
+				default="#iframeForm , #iframeForm input { font-family: Open Sans, Verdana, Arial, sans-serif;font-size: 16px;color: #333333;height:unset;} #iframeForm .label-group{ width: 28%;padding: 9px 0; } #iframeForm .input-group{ width: 68%; }">
+				
+<cc:text 	name="info"
+			default="Der Betrag wird von Ihrer Kreditkarte abgebucht, sobald die Bestellung abgeschickt wird."
+			info="Dieser Erläuterungstext wird in der Auswahl der Zahlungsweisen angezeigt.">
+			
+<cc:text	name="postgateway"
+			default="Vielen Dank. Ihre Bestellung wurde entgegengenommen. Sie erhalten in Kürze eine Bestätigungsmail."
+			info="Dieser Text wird nach der Eingabe der persönlichen Daten dargestellt.">
